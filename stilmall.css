@@ -9,15 +9,17 @@ body, html {
 }
 body::before {
     content: "";
-    background-image: url(1147103-1920x1080-desktop-full-hd-bodybuilding-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     z-index: -1;
-    position: fixed;
+
+    background-image: url(1147103-1920x1080-desktop-full-hd-bodybuilding-background.jpg);
+    background-size: cover;
+    background-position: center top; /* Fokus på toppen */
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -482,6 +484,10 @@ h2 {
         padding-top: 50px;
         padding-left: 10px;
         font-size: 18px;
+      }
+      body::before {
+        background-attachment: scroll; /* För bättre prestanda */
+        background-position: center top;
       }
 
 }
