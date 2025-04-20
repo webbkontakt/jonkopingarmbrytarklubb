@@ -4,49 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilmall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="mobilmeny">        
+            <button id="meny-knapp" onclick="toggleMeny()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
         <div class="logo-container">
             <a href="index.html">
-                <img src="logga.png" alt="logo" class="logo-img">
+                <img src="awprofilbild.png" alt="logo" class="logo-img">
             </a>
-            <h1>Jönköpings Armbrytarklubb</h1>
         </div>
+        <h1>Jönköping Armbrytarklubb</h1>
         <nav id="meny">
             <ul>
-                <li><a href="OmOss.html">Om oss</a></li>
-                <li><a href="HittaHit.html">Hitta hit</a></li>
-                <li><a href="Medlemmar.html">Kontakt</a></li>
-                <li><a href="Galleri.html">Galleri</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="hittahit.html">Hitta hit</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
             </ul>
         </nav>
     </header>
 
     <div id="container">
-        <h2>Bilder</h2>
-        <div class="bilder-container">
-            <img src="sddefault.jpg" alt="Bild 1">
-            <img src="carl&gustavSM.jpg" alt="Bild 2">
-            <img src="" alt="Bild 3">
-            <img src="pixelcut-export-2.png" alt="Bild 4">
-            <img src="pixelcut-export-2.png" alt="Bild 5">
-            <img src="pixelcut-export-2.png" alt="Bild 6">
-            <img src="pixelcut-export-2.png" alt="Bild 7">
-            <img src="pixelcut-export-2.png" alt="Bild 8">
-            <img src="pixelcut-export-2.png" alt="Bild 9">
-            <img src="pixelcut-export-2.png" alt="Bild 10">
-            <img src="pixelcut-export-2.png" alt="Bild 11">
-            <img src="pixelcut-export-2.png" alt="Bild 12">
-            <img src="pixelcut-export-2.png" alt="Bild 13">
-            <img src="pixelcut-export-2.png" alt="Bild 14">
-            <img src="pixelcut-export-2.png" alt="Bild 15">
-            <img src="pixelcut-export-2.png" alt="Bild 16">
-            <img src="pixelcut-export-2.png" alt="Bild 17">
-            <img src="pixelcut-export-2.png" alt="Bild 18">
-            <img src="pixelcut-export-2.png" alt="Bild 19">
-            <img src="pixelcut-export-2.png" alt="Bild 20"> 
+        <h2 style="margin-bottom: 40px; margin-top: 40px;">Bilder</h2>
+        <div class="bilder-skalad">
+            <div class="bilder-container">
+                <img src="carl&gustavSM.jpg" alt="Bild 1">
+                <img src="isacjoel.JPEG" alt="Bild 2">
+                <img src="sddefault.jpg" alt="Bild 3">
+                <img src="pixelcut-export-2.png" alt="Bild 4">
+                <img src="pixelcut-export-2.png" alt="Bild 5">
+                <img src="pixelcut-export-2.png" alt="Bild 6">
+                <img src="pixelcut-export-2.png" alt="Bild 7">
+                <img src="pixelcut-export-2.png" alt="Bild 8">
+                <img src="pixelcut-export-2.png" alt="Bild 9">
+                <img src="pixelcut-export-2.png" alt="Bild 10">
+                <img src="pixelcut-export-2.png" alt="Bild 11">
+                <img src="pixelcut-export-2.png" alt="Bild 12">
+                <img src="pixelcut-export-2.png" alt="Bild 13">
+                <img src="pixelcut-export-2.png" alt="Bild 14">
+                <img src="pixelcut-export-2.png" alt="Bild 15">
+                <img src="pixelcut-export-2.png" alt="Bild 16">
+                <img src="pixelcut-export-2.png" alt="Bild 17">
+                <img src="pixelcut-export-2.png" alt="Bild 18">
+                <img src="pixelcut-export-2.png" alt="Bild 19">
+                <img src="pixelcut-export-2.png" alt="Bild 20"> 
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/195253587264703" target="_blank">
+                <img src="facebook.webp" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.facebook.com/messages/t/3717863848276396" target="_blank">
+                <img src="messenger.jpg" alt="Messenger" height="50">
+            </a>
+            <a href="https://www.tiktok.com/@jonkopingsarmbrytarklubb" target="_blank">
+                <img src="tiktok.jpg" alt="Tiktok" width="50" height="50">
+            </a>
+            <a href="https://www.instagram.com/jonkopingarmbrytarklubb/" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="60" height="60">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

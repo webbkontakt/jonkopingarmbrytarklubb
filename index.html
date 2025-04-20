@@ -4,55 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilmall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="mobilmeny">        
+            <button id="meny-knapp" onclick="toggleMeny()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
         <div class="logo-container">
             <a href="index.html">
-                <img src="logga.png" alt="logo" class="logo-img">
+                <img src="awprofilbild.png" alt="logo" class="logo-img">
             </a>
-            <h1>Jönköpings Armbrytarklubb</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="OmOss.html">Om oss</a></li>
-                <li><a href="hittahit.html">Hitta hit</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-                <li><a href="galleri.html">Galleri</a></li>
-            </ul>
-        </nav>
+        <h1>Jönköping Armbrytarklubb</h1>
+            <nav id="meny">
+                <ul>
+                    <li><a href="medlemskap.html">Medlemskap</a></li>
+                    <li><a href="hittahit.html">Hitta hit</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="galleri.html">Galleri</a></li>
+                </ul>
+            </nav>
     </header>
 
     <div id="container">
         <div class="content-section">
             <div class="image-container">
-                <img src="grabbar.jpg" alt="Beskrivning">
+                <img src="isacjoel.JPEG" alt="Beskrivning" id="img1">
             </div>
             <div class="text-container">
-                <h2>Träna med oss!</h2>
-                <p>* Är DU redo att upptäcka dina armars sanna styrka?!</p>
-                <p>* Bor du i närheten av jönköping tycker vi att du ska ge armbrytning en chans!</p>
-                <p>* Hos oss är alla välkommna, stora som små, svaga som starka!</p>
-                <p>* Vi har många erfarna armbrytare med över 14 års erfarenhet som kommer vägleda dig genom all teknik inom den vackra sporten armbrytning.</p>
+                <h2>Träna med oss</h2>
+                <ul>
+                    <li>Är du redo att upptäcka dina armars sanna styrka?!</li>
+                    <li>Bor du i närheten av jönköping tycker vi att du ska ge armbrytning en chans!</li>
+                    <li>Hos oss är alla välkommna, stora som små, svaga som starka!</li>
+                    <li style="line-height: 30px;"> Vi har många erfarna brytare med över 14 års erfarenhet som kommer vägleda dig genom all teknik inom den underbara sporten armbrytning.</li>
+                </ul>
             </div>
         </div>
 
-        <div class="content-section">
+        <div class="content-section" id="content-section2">
             <div class="text-container">
                 <div class="schema">
-                    <h2>Tid & Plats</h2>
-                <p>Träning: Söndagar kl.17.00-19.00</p>
-                <p>Plats: Västra järnvägsgatan 4</p>
-                <p>562 41 Taberg</p>
-                </div>
-                
+                <h2>Tid & Plats</h2>
+                <ul>
+                    <li>Träning: Söndagar kl.17.00-19.00</li>
+                    <li>Plats: Västra järnvägsgatan 4</li>
+                    <li>562 41 Taberg</li>
+                </ul> 
             </div>
-            <div class="image-container">
-                <img src="smfamilj.jpeg.webp" alt="Beskrivning">
-            </div>
-            
-            
+        </div>
+        <div class="image-container">
+            <img src="smfamilj.jpeg.webp" alt="Beskrivning" id="img2">
+        </div>
         </div>
     </div>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/195253587264703" target="_blank">
+                <img src="facebook.webp" alt="Facebook" width="40" height="40">
+            </a>
+              
+            <a href="https://www.facebook.com/messages/t/3717863848276396" target="_blank">
+                <img src="messenger.jpg" alt="Messenger" height="50">
+            </a>
+            <a href="https://www.tiktok.com/@jonkopingsarmbrytarklubb" target="_blank">
+                <img src="tiktok.jpg" alt="Tiktok" width="50" height="50">
+            </a>
+              
+            <a href="https://www.instagram.com/jonkopingarmbrytarklubb/" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="60" height="60">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

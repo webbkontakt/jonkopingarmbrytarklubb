@@ -4,42 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilmall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="mobilmeny">        
+            <button id="meny-knapp" onclick="toggleMeny()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
         <div class="logo-container">
             <a href="index.html">
-                <img src="logga.png" alt="logo" class="logo-img">
+                <img src="awprofilbild.png" alt="logo" class="logo-img">
             </a>
-            <h1>Jönköpings Armbrytarklubb</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="OmOss.html">Om oss</a></li>
-                <li><a href="hittahit.html">Hitta hit</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-                <li><a href="galleri.html">Galleri</a></li>
-            </ul>
-        </nav>
+        <h1>Jönköping Armbrytarklubb</h1>
+            <nav id="meny">
+                <ul>
+                    <li><a href="medlemskap.html">Medlemskap</a></li>
+                    <li><a href="hittahit.html">Hitta hit</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="galleri.html">Galleri</a></li>
+                </ul>
+            </nav>
     </header>
-
     <div id="container">
-        <h2>Kontakt</h2>
-        <div class="kontakter">
-            <div class="kontakt1">
-                <p>Tränare: Andreas Oskarsson</p>
-                <p2>Mobil: 123456789</p2>
-            </div>
-            <div class="kontakt-erik">
-                <p>Ordförande: Erik Kangas</p>
-                <p2>Mobil: 123456789</p2>
-            </div>
-            <div class="kontakt-carl">
-                <p>Medlemsansvarig: Carl Jernberg</p>
-                <p2>Mobil: 123456789</p2>
-            </div>
+        <h4>Skicka ett mail med frågor:</h4>
+        <div class="contactform">
+            <form action="https://formsubmit.co/websystemab@gmail.com" method="POST">
+                <!-- Formsubmit extra -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/tack.html"> <!-- Ändra till din tack-sida -->
+    
+                <label for="fname">Förnamn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn.." required>
+    
+                <label for="lname">Efternamn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn.." required>
+                
+                <label for="mobilnummer">Mobilnummer</label>
+                <input type="text" id="mobilnr" name="mobilnummer" placeholder="Mobilnr.." required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail.." required>
+
+                <label for="subject">Förfrågan</label>
+                <textarea id="subject" name="subject" placeholder="Skriv här.." style="height:200px" required></textarea>
+    
+                <input type="submit" value="Skicka">
+            </form>
         </div>
-        <p class="uppdaterad">Senast uppdaterad: 2024-12-25</p>
     </div>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/195253587264703" target="_blank">
+                <img src="facebook.webp" alt="Facebook" width="40" height="40">
+            </a>
+              
+            <a href="https://www.facebook.com/messages/t/3717863848276396" target="_blank">
+                <img src="messenger.jpg" alt="Messenger" height="50">
+            </a>
+            <a href="https://www.tiktok.com/@jonkopingsarmbrytarklubb" target="_blank">
+                <img src="tiktok.jpg" alt="Tiktok" width="50" height="50">
+            </a>
+              
+            <a href="https://www.instagram.com/jonkopingarmbrytarklubb/" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="60" height="60">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
