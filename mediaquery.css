@@ -117,8 +117,8 @@
     }
     
     .bilder-container {
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
     }
     .bilder-container img {
         width: 100% !important;
