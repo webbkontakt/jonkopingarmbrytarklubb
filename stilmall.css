@@ -41,6 +41,9 @@ header {
     z-index: 1000;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+.hemknapp{
+    display: none !important; 
+}
 .meny{
     display: flex;
     justify-content: flex-end;
@@ -160,8 +163,9 @@ nav a:hover {
     font-family: "monospace";
     font-size: 20px;
 }
+
 .text-container1 li{
-    line-height: 70px;
+    line-height: 40px !important;
 }
 .logo-container{
     display: flex;
@@ -203,22 +207,25 @@ h2 {
     color: white;
     
 }
+#meny li{
+    width: 100px;
+}
 #meny ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* om du vill ha horisontell meny */
+  display: flex;
   gap: 10px;
 }
 
 #meny li a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffffff; /* valfri färg */
+  background-color: #ffffff;
   color: #000;
   font-size: 14.5px;
   text-decoration: none;
-  border-radius: 12px; /* gör hörnen runda */
+  border-radius: 12px;
   transition: background-color 0.3s ease;
 }
 
@@ -239,15 +246,35 @@ h2 {
 .hemknapp{
     display: none !important; 
 }
+.menyknappMED, .menyknappHITTA, .menyknappKONTAKT, .menyknappGALLERI{
+    display: inline-block !important;
+}
+.hemikon {
+    display: none;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    z-index: 1005;
+}
+
 @media (max-width: 768px) {
     .hemknapp{
         display: inline-block !important;
+    }
+    .menyknappMED, .menyknappHITTA, .menyknappKONTAKT, .menyknappGALLERI{
+        display: none !important;
     }
     .content-section {
         flex-direction: column;
         align-items: center;
         width: 95%;
         padding-top: 10px;
+    }
+    .hemikon {
+        display: block;
     }
     .logo-container{
         justify-content: center;
@@ -303,7 +330,7 @@ h2 {
         top: 80px;
         left: 0;
         width: 100%;
-        height: 300px;
+        height: auto;
         background-color: white;
         border-top: 1px solid #ccc;
         z-index: 1000;
@@ -323,28 +350,33 @@ h2 {
     #meny ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        justify-content: flex-start;
+        width: 100%;
         margin: 0;
         padding-left: 0;
         padding-bottom: 10px;
+    }
+    #meny li{
+        width: auto;
     }
     #meny a{
         border: 2px solid black;
         border-radius: 20px;
         padding: 12px;
-        width: 150px;
+        width: auto;
+        min-width: 150px;
     }
     #meny a::after{
         display: none;
     }
     
     header {
-        display: flex; /* Använd flexbox för att styra innehållet */
-        flex-direction: column; /* Placera innehåll i en kolumn */
-        align-items: center; /* Centrerar innehållet horisontellt */
-        justify-content: center; /* Centrerar innehållet vertikalt */
-        text-align: center; /* Centrerar eventuell text */
-        height: 40px; /* Justera höjden efter behov */
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 40px;
         gap: 10px;
         position: relative;
     }
@@ -514,6 +546,9 @@ h2 {
       body::before {
         background-attachment: scroll; /* För bättre prestanda */
         background-position: center top;
+      }
+      .text-container1 li{
+        font-size: 18px !important;
       }
 
 }
