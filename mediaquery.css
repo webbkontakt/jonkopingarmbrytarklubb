@@ -275,5 +275,17 @@
     z-index: 9000;
     background: linear-gradient(90deg, rgb(128, 77, 0), transparent, rgb(128, 77, 0), transparent, rgb(128, 77, 0) , transparent, rgb(128, 77, 0)) border-box;
 }
+.nyheter {
+    flex-direction: column; /* Staplar kolumnerna lodrätt istället för bredvid */
+    gap: 20px;              /* Mindre mellanrum när de ligger lodrätt */
+  }
+
+  .nyheter-nav {
+    width: 100%;            /* Kolumner tar hela bredden */
+  }
+  .nyheter-nav li {
+  width: 80%;
+  margin: 0 auto;
+}
 
 }

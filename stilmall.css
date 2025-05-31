@@ -5,7 +5,7 @@ body, html {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body::before {
     content: "";
@@ -151,7 +151,7 @@ nav a:hover {
 
 .text-container {
     flex: 1;
-    padding: 20px;
+    padding: 0;
     background-color: #000000;
     color: #fff;
     position: relative;
@@ -165,7 +165,6 @@ nav a:hover {
 }
 .text-container li{
     line-height: 4;
-    font-family: "monospace";
     font-size: 20px;
 }
 .logo-container{
@@ -198,7 +197,7 @@ h1{
     transform: translateX(-50%);
     white-space: nowrap;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     pointer-events: none;
     transition: opacity 0.3s ease;
     color: white;
@@ -442,18 +441,54 @@ h2 {
     z-index: 9000;
     background: linear-gradient(90deg, rgb(128, 77, 0), transparent, rgb(128, 77, 0), transparent, rgb(128, 77, 0) , transparent, rgb(128, 77, 0)) border-box;
 }
-.nyheter-container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    color: white;
-    flex-direction: column;
+.nyheter-container h2{
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
-.nyheter{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 80px;
-    font-size: 16px;
+
+.nyheter {
+  display: flex;          /* Sätter nav bredvid varandra */
+  gap: 400px;              /* Mellanrum mellan kolumnerna */
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 100px;
 }
+
+.nyheter-nav {
+  display: inline-block; /* Gör så att nav tar så mycket plats som innehållet */
+  vertical-align: top;   /* Se till att kolumnerna ligger i linje */
+  margin: 0 20px;        /* Luft mellan kolumnerna */
+}
+
+.nyheter-nav ul {
+  display: block;   /* Standard, listan blir lodrät */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.nyheter-nav li {
+  display: list-item; /* Standard, varje li på egen rad */
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.nyheter-nav li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
   
