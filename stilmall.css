@@ -57,7 +57,6 @@ nav {
     padding: 0;
 }
 
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -156,7 +155,7 @@ nav a:hover {
     color: #fff;
     position: relative;
     z-index: 2;
-    
+    padding-bottom: 20px;
 }
 
 .text-container a{
@@ -165,7 +164,7 @@ nav a:hover {
 }
 .text-container li{
     line-height: 4;
-    font-size: 20px;
+    font-size: 18px;
 }
 .logo-container{
     display: flex;
@@ -261,6 +260,7 @@ h2 {
     position: relative;
     z-index: 2;
     font-size: medium;
+    font-weight: bold;
 
 
 }
@@ -481,6 +481,7 @@ h2 {
 .nyheter-nav li:last-child {
   border-bottom: none;
 }
+
 
 
 

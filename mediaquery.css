@@ -6,9 +6,9 @@
         padding-top: 10px;
     }
     .logo-container{
-        justify-content: center;
-        width: 100%;
-        order: 1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     nav ul {
@@ -136,6 +136,14 @@
         padding: 20px; 
         
     }
+    .schema{
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 140px;
+    }
     .meny{
         display: none;
     }
@@ -146,6 +154,9 @@
         gap: 30px;
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+
     }
     .text-container li{
         line-height: 1.5;
