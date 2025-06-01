@@ -214,27 +214,34 @@ h2 {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
+.meny2{
+    color: #fff;
+    margin-right: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+}
 #meny li a {
   display: flex;
   justify-content: center;
   height: 16px;
   width: 90px;
-  background-color: #ffffff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   font-size: 14.5px;
   text-decoration: none;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
+  transition: border-bottom 0.3s ease;
 }
 #meny li{
     padding: 10px;
 }
 
 #meny li a:hover {
-  background-color: #ff9e4e;
+  border-bottom: 1px solid white;
 }
 .omossp{
     text-align: center;
