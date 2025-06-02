@@ -125,7 +125,25 @@ nav a:hover {
     padding-top: 100px;
     
 }
-
+.extra-text{
+    color: #fff;
+}
+.extra-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 100px;
+    gap: 150px;
+}
+.extra-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#img3{
+    height: 550px;
+}
 .image-container {
     flex: 1;
     width: 95%;
