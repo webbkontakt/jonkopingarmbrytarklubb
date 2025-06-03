@@ -321,9 +321,9 @@
 }
 .extra-container img{
     height: auto !important;
-    width: 400px;
-    margin: 0;
+    max-width: 100%;
+    border-radius: 2%;
+    margin: 0 auto;
     padding: 0;
-
 }
 }
