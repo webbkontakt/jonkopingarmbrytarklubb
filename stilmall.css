@@ -9,7 +9,7 @@ body, html {
 }
 body::before {
     content: "";
-    background-image: url(1147103-1920x1080-desktop-full-hd-bodybuilding-background.jpg);
+    background-image: url(orangetest3.avif);
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
@@ -90,7 +90,7 @@ nav a:hover {
 #container {
     width: 100%;
     max-width: 1800px;
-    margin: 105px auto;
+    margin: 40px auto;
     background-color: #000000;
     border-radius: 10px;
     height: auto;
@@ -122,7 +122,7 @@ nav a:hover {
     margin-top: 20px;
     width: 80%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 90px;
     
 }
 .extra-text{
