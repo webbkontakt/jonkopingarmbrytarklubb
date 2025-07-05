@@ -130,6 +130,30 @@ nav a:hover {
     padding-top: 90px;
     
 }
+.hitta-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 140px;
+    padding-top: 40px;
+    text-align: center;
+}
+.hitta-container{
+    color: white;
+    flex-direction: column;
+    max-width: 400px;
+}
+.hitta-container p{
+    font-size: 18px;
+
+}
+.hitta-container a{
+    box-sizing: border-box;
+}
+.hitta-container img{
+    width: 300px;
+    height: auto;
+}
 .extra-text{
     color: #fff;
 }
@@ -270,17 +294,17 @@ h2 {
     padding-top: 50px;
 }
 .karta{
-    width: 30%;
+    width: 400px !important;
+    height: 400px !important;
     margin: 0 auto;
     display: block;
-    position: relative;
     z-index: 2;
     margin-bottom: 20px;
     
 }
 .knappKartor{
     align-items: center;
-    height: 20%;
+    height: 60px;
     padding: 20px 40px;
     margin-top: 20px;
     border-radius: 10px;

@@ -141,6 +141,8 @@
     #container {
         width: 95%;
         padding: 10px;
+        display: flex;
+        align-items: center;
     }
     .schema{
         padding: 0 !important;
@@ -331,6 +333,27 @@
     padding: 0;
 }
 }
+/* Hitta hit */
+
+@media (max-width: 1260px) {
+    .hitta-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .hitta-container{
+        height: auto;
+    }
+    .container{
+        height: auto;
+    }
+    .klocka2{
+        padding-bottom: 70px;
+    }
+}
+/* hitta */
 
 
 @media (max-width: 600px) {
@@ -352,3 +375,4 @@
     height: auto;
   }
 }
+
