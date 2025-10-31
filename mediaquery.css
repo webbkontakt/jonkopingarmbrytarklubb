@@ -346,6 +346,7 @@
     }
     .hitta-container{
         height: auto;
+        padding-bottom: 40px;
     }
     .container{
         height: auto;

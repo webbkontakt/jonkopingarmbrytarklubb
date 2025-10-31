@@ -142,11 +142,10 @@ nav a:hover {
 .hitta-container{
     color: white;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
 }
 .hitta-container p{
     font-size: 18px;
-
 }
 .hitta-container a{
     box-sizing: border-box;
@@ -154,6 +153,10 @@ nav a:hover {
 .hitta-container img{
     width: 300px;
     height: auto;
+}
+.dorr {
+    height: 500px;
+    width: 500px;
 }
 .extra-text{
     color: #fff;
